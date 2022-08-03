@@ -15,7 +15,17 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
+- task: BrowserStackConfig@0
+  inputs:
+    BrowserStackServiceEndPoint: 'firstConnection'
+    browserstackLocal: true
+    bsLocalOptions: |
+      {
+        "localIdentifier": "abcd1234"
+      }
+
 - script: |
     npm install
     npm run build
   displayName: 'npm install and build'
+- task: BrowserStackStopLocal@0

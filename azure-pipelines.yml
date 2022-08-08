@@ -23,9 +23,6 @@ steps:
       {
         "localIdentifier": "abcd1234"
       }
-- powershell: |
-   Start-Sleep -Seconds 60  
-  displayName: 'sleeepy'
 
 - script: |
     npm install

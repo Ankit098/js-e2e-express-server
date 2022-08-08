@@ -23,6 +23,9 @@ steps:
       {
         "localIdentifier": "abcd1234"
       }
+- task: Bash@3
+  inputs:
+    script: 'sleep 50'
 
 - script: |
     npm install

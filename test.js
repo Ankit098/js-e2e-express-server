@@ -34,7 +34,6 @@ const runSampleTest = async (capabilities) => {
     await driver.get('http://github.com')
     console.log(await driver.getTitle())
     console.log(await driver.getCurrentUrl())
-    await markPass(driver)
   } catch (e) {
     console.log(e)
   } finally {

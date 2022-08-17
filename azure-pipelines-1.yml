@@ -30,7 +30,7 @@ steps:
 
 - script: |
     npm install
-    node abc.js
+    node test.js
   displayName: 'npm install and build'
 
 - task: BrowserStackStopLocal@0

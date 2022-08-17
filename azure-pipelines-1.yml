@@ -31,6 +31,7 @@ steps:
 - script: |
     npm install
     node test.js
+    node test2.js
   displayName: 'npm install and build'
 
 - task: BrowserStackStopLocal@0

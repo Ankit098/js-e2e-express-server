@@ -10,7 +10,7 @@ var capabilities = {
   'bstack:options' : {
     "os" : "Windows",
     "osVersion" : "10",
-    "sessionName" : "BStack Build Name: " + buildName, // CI/CD job name using BROWSERSTACK_BUILD_NAME env variable
+    "sessionName" : buildName, // CI/CD job name using BROWSERSTACK_BUILD_NAME env variable
     "local" : local,
     "localIdentifier" : localIdentifier,
     "userName" : username,

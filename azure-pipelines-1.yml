@@ -30,7 +30,6 @@ steps:
 
 - script: |
     npm install
-    npm run build
     node test.js
   displayName: 'npm install and build'
 

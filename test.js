@@ -16,6 +16,7 @@ var capabilities = {
     "userName" : username,
     "accessKey" : accessKey,
     "seleniumVersion" : "4.0.0",
+    "buildName": buildName
   },
     "browserName" : "Chrome",
     "browserVersion" : "100.0",

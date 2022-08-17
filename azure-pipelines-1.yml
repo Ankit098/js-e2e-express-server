@@ -33,10 +33,10 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
-- task: BrowserStackResults@1
-  inputs:
-    browserstackProduct: 'automate'
-
 - task: BrowserStackStopLocal@0
   inputs:
     localIdentifier: 'pipeline2'
+
+- task: BrowserStackResults@1
+  inputs:
+    browserstackProduct: 'automate'
